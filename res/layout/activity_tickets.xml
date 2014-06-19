@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     android:orientation="vertical" 
+     android:background="@drawable/repeat"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+
+  <LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#80000000"
+		android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+		android:orientation="vertical">
+    
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:paddingTop="15sp"
+    		android:paddingBottom="15sp"
+	        android:orientation="horizontal">
+			 <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		      	android:layout_weight=".60"
+		        android:orientation="vertical">
+			      <ImageButton
+			        android:id="@+id/ticket_img"
+			        android:contentDescription="@string/comprar_ahora"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			        android:src="@drawable/ticket"/>
+			     
+			 </LinearLayout>
+			  <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		      	android:layout_weight=".40"
+		        android:orientation="vertical">
+			     
+			      <TextView
+		            android:id="@+id/txt_tickets_ticket"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/comprar_ahora"
+    				android:gravity="center"
+    				style="@style/TitlesMedium"
+    				/>
+		           
+			 </LinearLayout>
+
+	    </LinearLayout>
+	    <!-- View 
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"       
+		   android:background="#24B9FF"/>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	         android:paddingTop="30sp"
+    		android:paddingBottom="30sp"
+	        android:orientation="horizontal">
+			 <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		      	android:layout_weight=".40"
+		        android:orientation="vertical">
+			      <ImageButton
+			        android:id="@+id/phone_img"
+			        android:contentDescription="@string/servicios_adicionales"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			        android:src="@drawable/phone"/>
+			     
+			 </LinearLayout>
+			  <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		      	android:layout_weight=".60"
+		        android:orientation="vertical">
+			     
+			      <TextView
+		            android:id="@+id/txt_tickets_phone"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/servicios_adicionales"
+    				android:gravity="center"
+    				style="@style/TitlesMedium"
+    				/>
+		           
+			 </LinearLayout>
+		
+	    </LinearLayout>
+	    <View 
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"       
+		   android:background="#24B9FF"/>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:paddingTop="30sp"
+	        android:paddingLeft="50sp"
+    		android:paddingRight="50sp"
+	        android:orientation="horizontal">
+				
+				<ImageButton
+			        android:id="@+id/operador_img"
+			        android:contentDescription="@string/contacta_callcenter"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			        android:src="@drawable/operador_icon"/>
+			 
+	    </LinearLayout-->
+	     <View 
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"       
+		   android:background="#24B9FF"/>
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:paddingTop="50sp"
+	        android:paddingBottom="50sp"
+	        android:orientation="vertical">
+				
+	          <TextView
+		            android:id="@+id/txt_tickets_callcanter_info"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/callcanter_info"
+    				android:gravity="center"
+    				style="@style/BodyMedium"
+    				/>
+	          
+				<ImageButton
+			        android:id="@+id/llama_img"
+			        android:contentDescription="@string/callcanter_info"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			         android:paddingLeft="50sp"
+    				android:paddingRight="50sp"
+    				android:paddingTop="20sp"
+			        android:src="@drawable/call_button_esp"/>
+			 
+	    </LinearLayout>
+	    
+	    	           	    	
+	</LinearLayout>	    	           
+    
+</ScrollView>
