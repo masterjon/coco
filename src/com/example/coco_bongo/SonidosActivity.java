@@ -1,10 +1,14 @@
 package com.example.coco_bongo;
 
+import java.io.IOException;
+
 import com.example.coco_bongo.data.CustomGrid;
 import com.example.coco_bongo.models.OptionsMenu;
 import com.example.coco_bongo.models.menuItem;
 
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -15,6 +19,8 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class SonidosActivity extends Activity {
+	boolean isPlaying = false;
+	MediaPlayer mediaPlayer ;
 	int[] promoItem = {
 		R.string.sound_heig,
 		R.string.sound_just,
@@ -57,12 +63,71 @@ public class SonidosActivity extends Activity {
 		CustomGrid adapter = new CustomGrid(getApplicationContext(),promoItem,imagesId);
 		grid.setAdapter(adapter);
 		grid.setOnItemClickListener(new OnItemClickListener() {
+			@SuppressWarnings("null")
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 					long arg3) {
-				MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(),soundsId[position]);
-				mediaPlayer.start();
-				// TODO Auto-generated method stub
+
+				Uri uri=Uri.parse("android.resource://com.example.coco_bongo/" + soundsId[position]);
+				if (!isPlaying){
+					
+					mediaPlayer = new MediaPlayer();
+					 try {
+						mediaPlayer.setDataSource(getApplicationContext(), uri);
+						mediaPlayer.prepare();
+						mediaPlayer.start();
+						isPlaying=true;
+					} catch (IllegalArgumentException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (SecurityException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IllegalStateException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+					
+				}else{
+
+			        isPlaying = false;
+			        mediaPlayer.stop();
+			        mediaPlayer.reset();
+			        try {
+						mediaPlayer.setDataSource(getApplicationContext(),uri);
+						mediaPlayer.prepare();
+				        mediaPlayer.start();
+				        isPlaying = true;
+					} catch (IllegalArgumentException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (SecurityException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IllegalStateException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			        
+
+			    }
+				mediaPlayer.setOnCompletionListener(new OnCompletionListener() {
+					
+					@Override
+					public void onCompletion(MediaPlayer mp) {
+						mp.release();
+						isPlaying=false;
+						// TODO Auto-generated method stub
+						
+					}
+				});
 				
 			}
 		});

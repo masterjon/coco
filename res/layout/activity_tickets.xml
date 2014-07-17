@@ -162,7 +162,7 @@
 			         android:paddingLeft="50sp"
     				android:paddingRight="50sp"
     				android:paddingTop="20sp"
-			        android:src="@drawable/call_button_esp"/>
+			        android:src="@drawable/call_button"/>
 			 
 	    </LinearLayout>
 	    
