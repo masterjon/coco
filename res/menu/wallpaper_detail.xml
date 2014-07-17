@@ -23,11 +23,7 @@
                 android:id="@+id/wpres3"
                 android:showAsAction="never"
                 android:title="@string/wp_res3"/>
-            <item 
-                android:id="@+id/wpres4"
-                android:showAsAction="never"
-                android:title="@string/wp_res4"/>
+            
         </menu>
-        </item>
-
+    </item>
 </menu>

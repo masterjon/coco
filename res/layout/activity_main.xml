@@ -9,13 +9,14 @@
     android:background="@drawable/repeat"
     tools:context=".MainActivity" >
 
-
     <GridView
         android:id="@+id/grid_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:background="#80000000"
         android:numColumns="2" >
     </GridView>
+   
 </RelativeLayout>

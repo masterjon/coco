@@ -1,9 +1,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
+	<item 
+	    android:id="@+id/action_select_location"
+	     android:showAsAction="always"
+        android:icon="@drawable/location_icon"
+        android:title="@string/select_location">
+	<menu >
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_map_cancun"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
-
+        android:title="@string/action_cancun"/>
+    <item
+        android:id="@+id/action_map_playa"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_playa"/>
+    <item
+        android:id="@+id/action_map_puntacana"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_puntacana"/>
+	</menu>
+    </item>	
 </menu>

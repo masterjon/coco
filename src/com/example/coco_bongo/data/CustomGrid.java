@@ -16,9 +16,9 @@ public class CustomGrid extends BaseAdapter{
     private Context mContext;
 
     private final int[] Imageid;
-    private final String[] menuItem;
+    private final int[] menuItem;
     private final boolean showSingleImage;
-      public CustomGrid(Context c,String[] menuItem ,int[] Imageid ) {
+      public CustomGrid(Context c,int[] menuItem ,int[] Imageid ) {
           mContext = c;
           this.Imageid = Imageid;
           this.menuItem = menuItem;

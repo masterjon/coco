@@ -1,56 +1,68 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-    <item 
-        android:id="@+id/action_tickets" 
-        android:icon="@drawable/tickets_icon" 
-        android:title="@string/action_Tickets" 
-        android:showAsAction="never" />
-    
 	<item 
-	    android:id="@+id/action_promos" 
-	    android:icon="@drawable/promo_icon" 
-	    android:title="@string/action_Promociones" 
-	    android:showAsAction="never" />
-	
-	<item 
-	    android:id="@+id/action_boutique" 
-	    android:icon="@drawable/shop_icon" 
-	    android:title="@string/action_Boutique" 
-	    android:showAsAction="never" />
-	
-	<item 
-	    android:id="@+id/action_shows" 
-	    android:icon="@drawable/shows_icon" 
-	    android:title="@string/action_Set" 
-	    android:showAsAction="never" />
-	
-	<item 
-	    android:id="@+id/action_media" 
-	    android:icon="@drawable/media_icon" 
-	    android:title="@string/action_Media" 
-	    android:showAsAction="never" />
-	
-	<item 
-	    android:id="@+id/action_galeria" 
-	    android:icon="@drawable/galeria_icon" 
-	    android:title="@string/action_Galeria" 
-	    android:showAsAction="never" />
-	
-	<item 
-	    android:id="@+id/action_ecard" 
-	    android:icon="@drawable/ecards_button" 
-	    android:title="@string/action_Ecards" 
-	    android:showAsAction="never" />
-
-	<item 
-	    android:id="@+id/action_ubicacion" 
-	    android:icon="@drawable/location_icon" 
-	    android:title="@string/action_Ubicacion" 
-	    android:showAsAction="never" />
-    
+     android:id="@+id/action_settings"
+       android:icon="@drawable/menu_button"
+       android:showAsAction="always"
+       
+       android:title="@string/action_settings">
+	   <menu>
+		    <item 
+		        android:id="@+id/action_tickets" 
+		        android:icon="@drawable/tickets_icon" 
+		        android:title="@string/title_activity_tickets" 
+		        android:showAsAction="never" />
+		    
+			<item 
+			    android:id="@+id/action_promos" 
+			    android:icon="@drawable/promo_icon" 
+			    android:title="@string/title_activity_promos" 
+			    android:showAsAction="never" />
+			
+			<item 
+			    android:id="@+id/action_boutique" 
+			    android:icon="@drawable/shop_icon" 
+			    android:title="@string/title_activity_boutique" 
+			    android:showAsAction="never" />
+			
+			<item 
+			    android:id="@+id/action_shows" 
+			    android:icon="@drawable/shows_icon" 
+			    android:title="@string/title_activity_shows" 
+			    android:showAsAction="never" />
+			
+			<item 
+			    android:id="@+id/action_set" 
+			    android:icon="@drawable/set_icon" 
+			    android:title="@string/title_activity_set" 
+			    android:showAsAction="never" />
+			<item 
+			    android:id="@+id/action_media" 
+			    android:icon="@drawable/media_icon" 
+			    android:title="@string/title_activity_media" 
+			    android:showAsAction="never" />
+			
+			<item 
+			    android:id="@+id/action_galeria" 
+			    android:icon="@drawable/galeria_icon" 
+			    android:title="@string/title_activity_gallery" 
+			    android:showAsAction="never" />
+			
+			<item 
+			    android:id="@+id/action_ecard" 
+			    android:icon="@drawable/ecards_button" 
+			    android:title="@string/title_activity_ecards" 
+			    android:showAsAction="never" />
+		
+			<item 
+			    android:id="@+id/action_ubicacion" 
+			    android:icon="@drawable/location_icon_2" 
+			    android:title="@string/title_activity_location" 
+			    android:showAsAction="never" />
+			<item 
+			    android:id="@+id/action_lenguaje" 
+			    android:icon="@drawable/idioma_icon" 
+			    android:title="@string/title_activity_lang" 
+			    android:showAsAction="never" />
+		</menu>
+    </item>
 </menu>

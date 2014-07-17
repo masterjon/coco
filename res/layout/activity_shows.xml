@@ -10,12 +10,15 @@
     tools:context=".ShowsActivity" >
 
     <GridView
+        
         android:id="@+id/grid_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:numColumns="3" >
+        android:background="#80000000"
+        android:numColumns="2" >
     </GridView>
     
 </RelativeLayout>

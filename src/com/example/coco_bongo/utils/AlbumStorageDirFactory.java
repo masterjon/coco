@@ -18,7 +18,7 @@ public class AlbumStorageDirFactory {
 	
 	private static final String TAG = AlbumStorageDirFactory.class.getSimpleName();
 	// Standard storage location for digital camera files
-	private static final String CAMERA_DIR = "/dcim/";
+	private static final String CAMERA_DIR = "/";
 	private static final String JPEG_FILE_PREFIX = "IMGR_";
 	private static final String JPEG_FILE_SUFFIX = ".jpg";
 

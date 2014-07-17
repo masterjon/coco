@@ -34,7 +34,7 @@
 		        android:orientation="vertical">
 			      <ImageButton
 			        android:id="@+id/ticket_img"
-			        android:contentDescription="@string/comprar_ahora"
+			        android:contentDescription="@string/buy_now"
 			        android:layout_width="match_parent"
 			        android:adjustViewBounds="true"
 					android:scaleType="fitCenter"
@@ -53,7 +53,7 @@
 		            android:id="@+id/txt_tickets_ticket"
 		            android:layout_width="fill_parent"
 		            android:layout_height="fill_parent"
-		            android:text="@string/comprar_ahora"
+		            android:text="@string/buy_now"
     				android:gravity="center"
     				style="@style/TitlesMedium"
     				/>

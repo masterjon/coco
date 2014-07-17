@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="lang_es">ESPAÑOL</string>
+	<string name="lang_en">ENGLISH</string>
+	<string name="lang_pr">PORTUGUÊS</string>
+		
+	
+	
+    <string name="app_name">Coco Bongo</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_cancun">Cancún</string>
+    <string name="action_playa">Playa del Carmen</string>
+    <string name="action_puntacana">Punta Cana</string>
+    
+    <string name="title_activity_tickets">Tickets</string>
+    <string name="title_activity_promos">Promociones</string>
+    <string name="title_activity_boutique">Boutique</string>
+    <string name="title_activity_shows">Shows</string>
+    <string name="title_activity_show_detail"></string>
+    <string name="title_activity_set">Set de la temporada</string>
+    <string name="title_activity_media">Media</string>
+    <string name="title_activity_wallpapers">Fondos de Pantalla</string>
+    <string name="title_activity_wallpaper_detail"></string>
+    <string name="title_activity_sound">Sonidos</string>
+    <string name="title_activity_gallery">Galería</string>
+    <string name="title_activity_ecards">E-cards</string>
+    <string name="title_activity_ecard_detail"></string>
+    <string name="title_activity_location">Ubicación</string>
+	<string name="title_activity_lang">Idioma</string>
+    
+     
+
+    <string-array name="array_image_input_method">
+        <item>Cámara</item>
+        <item>Galería</item>
+    </string-array>
+
+    <string name="buy_now">Comprar Ahora</string>
+    <string name="adittional_services">Servicios Adicionales</string>
+    <string name="contact_call_center">Contacta con nuestro Call Center para más Información</string>
+    <string name="callcanter_info">Contacta con nuestro Call Center para más información</string>
+    <string name="show_single_desc">Show</string>
+    <string name="wallpaper_single_desc">Fondos de pantalla</string>
+    <string name="ecard_single_desc">E-card</string>
+    <string name="select_location">Selecciona locación</string>
+
+    <string name="share">Comparte</string>
+    <string name="wp_res1">540x480</string>
+    <string name="wp_res2">960x854</string>
+    <string name="wp_res3">1080x960</string>
+
+    <string name="show_queen">Queen</string>
+    <string name="show_lmfao">LMFAO</string>
+    <string name="show_moulin">Moulin Rouge</string>
+    <string name="show_follow">Follow the leader</string>
+    <string name="show_captain">Captain America</string>
+    <string name="show_beyonce">Beyoncé</string>
+    <string name="show_samba">Samba</string>
+    <string name="show_michael">Michael Jackson</string>
+    <string name="show_elvis">Elvis</string>
+    
+    <string name="sound_heig">Heig Ho</string>
+    <string name="sound_just">Just Called</string>
+    <string name="sound_lion">Lion</string>
+    <string name="sound_hammer">Hammer</string>
+    <string name="sound_oh_yeah">Oh Yeah</string>
+    <string name="sound_birds">Birds</string>
+    <string name="sound_party">Party</string>
+    <string name="sound_horn">Horn</string>
+    <string name="sound_piano_1">Piano 1</string>
+    <string name="sound_piano_2">Piano 2</string>
+    <string name="sound_piano_3">Piano 3</string>
+    <string name="sound_piano_4">Piano 4</string>
+    
+    <string name="promo_1">Promo 1</string>
+    <string name="promo_2">Promo 2</string>
+    <string name="promo_3">Promo 3</string>
+    <string name="promo_4">Promo 4</string>
+	<string name="promo_5">Promo 5</string>
+
+	<string name="ecard_gaga_michael">Gaga y Michael</string>
+	<string name="ecard_gaga">Gaga</string>
+	<string name="ecard_elvis">Elvis</string>
+	<string name="ecard_michael">Michael</string>
+	<string name="ecard_beetlejuice_mask">Beetlejuice y La Mascara</string>
+	<string name="ecard_beyonce">Beyoncé</string>
+	<string name="ecard_madonna">Madonna</string>
+	<string name="ecard_beetlejuice">Beetlejuice</string>
+	<string name="ecard_mask">La Mascara</string>
+	<string name="select_image_from">Seleccionar imagen de:</string>
+    <string name="cancel">Cancelar</string>
+	<string name="save_to_gallery">Guardado en la Galería</string>
+	<string name="select_picture">Select Picture</string>
+	
+	<string name="wallpaper1">Wallpaper 1</string>
+	<string name="wallpaper2">Wallpaper 2</string>
+	<string name="wallpaper3">Wallpaper 3</string>
+	<string name="wallpaper4">Wallpaper 4</string>
+	<string name="wallpaper5">Wallpaper 5</string>
+	<string name="wallpaper6">Wallpaper 6</string>
+	<string name="wallpaper7">Wallpaper 7</string>
+	<string name="wallpaper8">Wallpaper 8</string>
+	<string name="wallpaper9">Wallpaper 9</string>
+	
+	<string name="coco_cancun_name">Coco Bongo Cancún</string>
+	<string name="coco_playa_name">Coco Bongo Playa del Carmen</string>
+	<string name="coco_puntacana_name">Coco Bongo Punta Cana</string>
+	<string name="cancun_snipet">Blvd. Kukulcán Km 9.5 Plaza Forum, Zona Hotelera Cancún Q.Roo, México</string>
+	<string name="playa_snipet">Av. 10 y Calle 12, Playa de Carmen Q.Roo, México</string>
+	<string name="puntacana_snipet">Centro Comercial Downtown Punta Cana, carretera Barcelo, Esq. el Boulevard, cruce de Coco Loco Bávaro, Punta Cana República Dominicana</string>
+	
+	<string name="share_ecard_text">¡Descarga la app de Coco Bongo y crea tu e-card #CocoBongoStyle!</string>
+	<string name="share_shows_text">¡Descarga la app de Coco Bongo y descubre los diferentes shows!</string>
+	<string name="share_wallpaper_text">¡Ponle #CocoBongoStyle a tu smartphone/tablet con estos wallpapers!</string>
+</resources>

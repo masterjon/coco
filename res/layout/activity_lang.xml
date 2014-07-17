@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:layout_width="fill_parent"
+        android:fillViewport="true">
+    <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+     	android:background="@drawable/red_texture_bg"
+        android:orientation="vertical">
+
+                <!-- content goes here -->
+				<ImageView
+			        android:id="@+id/boutique_button"
+			        android:layout_gravity="center"
+			        android:contentDescription="@string/app_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/logo_home"
+		        />  
+                <!-- stretching frame layout, using layout_weight -->
+        <FrameLayout
+            android:layout_width="fill_parent" android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+                <!-- content fixated to the bottom of the screen -->
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+           <Button
+			        android:id="@+id/es_button"
+			        android:text="@string/lang_es"			        
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			       android:background="@drawable/spanish_lenguage_button"
+			       android:textAppearance="@style/TitlesMedium"
+			        android:textColor="#FFFFFF"
+	        	/>  
+		        <Button
+			        android:id="@+id/en_button"
+			        android:text="@string/lang_en"
+			        android:contentDescription="@string/app_name"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			       android:background="@drawable/english_lenguage_button"
+			        android:textAppearance="@style/TitlesMedium"
+			        android:textColor="#FFFFFF"
+		        />  
+		        <Button
+			        android:id="@+id/pr_button"
+			        android:text="@string/lang_pr"
+			         android:contentDescription="@string/app_name"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			       	android:background="@drawable/portugues_lenguage_button"
+			        android:textAppearance="@style/TitlesMedium"
+			        android:textColor="#FFFFFF"
+		        />    
+            <!-- your bottom content -->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

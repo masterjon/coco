@@ -54,7 +54,7 @@
         </activity>
         <activity
             android:name="com.example.coco_bongo.SonidosActivity"
-            android:label="@string/title_activity_sonidos" >
+            android:label="@string/title_activity_sound" >
         </activity>
         <activity
             android:name="com.example.coco_bongo.MediaActivity"
@@ -75,6 +75,27 @@
         <activity
             android:name="com.example.coco_bongo.WallpaperDetailActivity"
             android:label="@string/title_activity_wallpaper_detail" >
+        </activity>
+        <activity
+            android:name="com.example.coco_bongo.SetActivity"
+            android:label="@string/title_activity_set" >
+        </activity>
+        <activity
+            android:name="com.example.coco_bongo.EcardsActivity"
+            android:label="@string/title_activity_ecards" >
+        </activity>
+        <activity
+            android:name="com.example.coco_bongo.EcardDetailActivity"
+            android:label="@string/title_activity_ecard_detail" >
+        </activity>
+        <activity
+            android:name="com.example.coco_bongo.LangActivity"
+            android:label="@string/title_activity_lang" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

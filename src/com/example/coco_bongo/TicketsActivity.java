@@ -1,5 +1,7 @@
 package com.example.coco_bongo;
 
+import com.example.coco_bongo.models.OptionsMenu;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -7,6 +9,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -17,6 +20,7 @@ public class TicketsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_tickets);
 		ImageButton tickets = (ImageButton) findViewById(R.id.ticket_img);
 		tickets.setOnClickListener(new OnClickListener() {
@@ -46,7 +50,12 @@ public class TicketsActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		// TODO Auto-generated method stub
+		OptionsMenu.selectItem(item,getApplicationContext());
+		return super.onMenuItemSelected(featureId, item);
+	}
 	private void call() {
 	    try {
 	        Intent callIntent = new Intent(Intent.ACTION_CALL);

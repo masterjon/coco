@@ -13,6 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class LocationActivity extends Activity {
 	 //static final LatLng HAMBURG = new LatLng(-86.747208,21.132893);
@@ -33,22 +34,22 @@ public class LocationActivity extends Activity {
 			       // .title("Hamburg"));
 	    Marker coco_cancun = map.addMarker(new MarkerOptions()
 	        .position(COCO_CANCUN)
-	        .title("Coco Bongo Cancún")
-	        .snippet("Blvd. Kukulcan Km 9.5 Plaza Forum, Zona Hotelera Cancún Q.Roo, México")
+	        .title(getString(R.string.coco_cancun_name))
+	        .snippet(getString(R.string.cancun_snipet))
 	        .icon(BitmapDescriptorFactory
 	            .fromResource(R.drawable.ic_launcher)));
 	    
 	    Marker coco_playa = map.addMarker(new MarkerOptions()
         .position(COCO_PLAYA)
-        .title("Coco Bongo Playa del Carmen")
-        .snippet("Av. 10 y Calle 12, Playa de Carmen Q.Roo, México")
+        .title(getString(R.string.coco_playa_name))
+        .snippet(getString(R.string.playa_snipet))
         .icon(BitmapDescriptorFactory
             .fromResource(R.drawable.ic_launcher)));
 	    
 	    Marker coco_puntacana = map.addMarker(new MarkerOptions()
         .position(COCO_PUNTACANA)
-        .title("Coco Bongo Punta Cana")
-        .snippet("Centro comercial Downtown Punta Cana, carretera Barcelo, Esq. el Boulevard, cruce de Coco Loco Bávaro, Punta Cana República Dominicana")
+        .title(getString(R.string.coco_puntacana_name))
+        .snippet(getString(R.string.puntacana_snipet))
         .icon(BitmapDescriptorFactory
             .fromResource(R.drawable.ic_launcher)));
 			    
@@ -58,14 +59,36 @@ public class LocationActivity extends Activity {
 		map.moveCamera(CameraUpdateFactory.newLatLngZoom(CAMERA,10));
 		
 		map.animateCamera(CameraUpdateFactory.zoomTo(4),2000, null);
-		map.getUiSettings().setZoomControlsEnabled(false);
+		map.getUiSettings().setZoomControlsEnabled(true);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.location, menu);
+		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		// TODO Auto-generated method stub
+		switch (item.getItemId()) {
+		case R.id.action_map_cancun:
+			map.moveCamera(CameraUpdateFactory.newLatLngZoom(COCO_CANCUN,10));
+			map.animateCamera(CameraUpdateFactory.zoomTo(14),2000, null);
+			return true;
+		case R.id.action_map_playa:
+			map.moveCamera(CameraUpdateFactory.newLatLngZoom(COCO_PLAYA,10));
+			map.animateCamera(CameraUpdateFactory.zoomTo(14),2000, null);
+			return true;
+		case R.id.action_map_puntacana:
+			map.moveCamera(CameraUpdateFactory.newLatLngZoom(COCO_PUNTACANA,10));
+			map.animateCamera(CameraUpdateFactory.zoomTo(14),2000, null);
+			return true;
+		default:
+			break;
+		}
+		return super.onMenuItemSelected(featureId, item);
 	}
 
 }

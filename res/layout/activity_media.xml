@@ -32,7 +32,7 @@
 		        android:orientation="vertical">
 			      <ImageButton
 			        android:id="@+id/wallpapers_img"
-			        android:contentDescription="@string/wallpapers"
+			        android:contentDescription="@string/wallpaper1"
 			        android:layout_width="match_parent"
 			        android:adjustViewBounds="true"
 					android:scaleType="fitCenter"
@@ -51,7 +51,7 @@
 		            android:id="@+id/txt_wallpapers"
 		            android:layout_width="fill_parent"
 		            android:layout_height="fill_parent"
-		            android:text="@string/wallpapers"
+		            android:text="@string/title_activity_wallpapers"
     				android:gravity="center"
     				style="@style/TitlesMedium"
     				/>
@@ -79,7 +79,7 @@
 		        android:orientation="vertical">
 			      <ImageButton
 			        android:id="@+id/sonodos_img"
-			        android:contentDescription="@string/sonidos"
+			        android:contentDescription="@string/title_activity_sound"
 			        android:layout_width="match_parent"
 			        android:adjustViewBounds="true"
 					android:scaleType="fitCenter"
@@ -98,7 +98,7 @@
 		            android:id="@+id/txt_media"
 		            android:layout_width="fill_parent"
 		            android:layout_height="fill_parent"
-		            android:text="@string/sonidos"
+		            android:text="@string/title_activity_sound"
     				android:gravity="center"
     				style="@style/TitlesMedium"
     				/>

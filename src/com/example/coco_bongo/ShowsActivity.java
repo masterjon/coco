@@ -1,59 +1,53 @@
 package com.example.coco_bongo;
 
 import com.example.coco_bongo.data.CustomGrid;
+import com.example.coco_bongo.models.OptionsMenu;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class ShowsActivity extends Activity {
-	String[] showsItem = {
-		"Show 1",
-		"Show 2",
-		"Show 3",
-		"Show 4",
-		"Show 5",
-		"Show 6",
-		"Show 7",
-		"Show 8",
-		"Show 9",
-		"Show 10",
-		"Show 11",
-		"Show 12",
+	int[] showsItem = {
+		R.string.show_queen,
+		R.string.show_lmfao,
+		R.string.show_moulin,
+		R.string.show_follow,
+		R.string.show_captain,
+		R.string.show_beyonce,
+		R.string.show_samba,
+		R.string.show_michael,
+		R.string.show_elvis,
 		
 	};
 	int[] Imageid={
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
-		R.drawable.frame8,
+		R.drawable.show_thumb_1,
+		R.drawable.show_thumb_2,
+		R.drawable.show_thumb_3,
+		R.drawable.show_thumb_4,
+		R.drawable.show_thumb_5,
+		R.drawable.show_thumb_6,
+		R.drawable.show_thumb_7,
+		R.drawable.show_thumb_8,
+		R.drawable.show_thumb_9,
 	};
 	int[] ImageBigid={
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
-			R.drawable.frame8_big,
+			R.drawable.show_detail_1,
+			R.drawable.show_detail_2,
+			R.drawable.show_detail_3,
+			R.drawable.show_detail_4,
+			R.drawable.show_detail_5,
+			R.drawable.show_detail_6,
+			R.drawable.show_detail_7,
+			R.drawable.show_detail_8,
+			R.drawable.show_detail_9,
+
 		};
 	
 	@Override
@@ -70,7 +64,7 @@ public class ShowsActivity extends Activity {
 					long arg3) {
 				Intent showIntent = new Intent(getApplicationContext(), ShowDetailActivity.class);
 				
-				showIntent.putExtra("title", showsItem[position]);
+				showIntent.putExtra("title", getString(showsItem[position]));
 				showIntent.putExtra("imageId", ImageBigid[position]);
 				startActivity(showIntent);
 				
@@ -81,8 +75,14 @@ public class ShowsActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.shows, menu);
+		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		// TODO Auto-generated method stub
+		OptionsMenu.selectItem(item,getApplicationContext());
+		return super.onMenuItemSelected(featureId, item);
 	}
 
 }

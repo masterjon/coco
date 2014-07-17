@@ -4,10 +4,12 @@
         android:showAsAction="always"
         android:icon="@drawable/share_button"
         android:title="@string/share"/>
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
+	  
+	   <item
+        android:id="@+id/action_download"
+        android:showAsAction="always"
+        android:icon="@drawable/download_button"
         android:title="@string/action_settings"/>
+   
 
 </menu>

@@ -15,8 +15,8 @@
 	    android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:background="#80000000"
-		android:paddingLeft="10sp"
-        android:paddingRight="10sp"
+		android:paddingLeft="4sp"
+        android:paddingRight="4sp"
 		android:orientation="vertical">
 		
 		<ImageView 
@@ -26,13 +26,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         />
-      
-       <TextView
-        android:id="@+id/show_title_single"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center" 
-        style="@style/BodyMedium"/>
+     
       </LinearLayout>	
 		
     
