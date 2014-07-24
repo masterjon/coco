@@ -117,11 +117,25 @@ public class EcardDetailActivity extends Activity {
 			         try {
 					//Bitmap bm = decodeUri(getApplicationContext(),selectedImageUri,500);
 			         Matrix matrix = new Matrix();
+			         
+			        // matrix.postRotate(0);
 			         matrix.postRotate(90);
+			         
+			         
 			         Bitmap bm = MediaStore.Images.Media.getBitmap(this.getContentResolver(),selectedImageUri);
-					 bm= Bitmap.createScaledBitmap(bm,  750,562, true);
-					 rotatedBm = Bitmap.createBitmap(bm , 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);
-			        	 img.setImageBitmap(rotatedBm);
+			         
+			         //bm= Bitmap.createScaledBitmap(bm,562,750, true);
+			         bm= Bitmap.createScaledBitmap(bm,750,562, true);
+			         
+					 
+			         if (bm.getWidth()>bm.getHeight()){
+						 
+					 }
+					 
+			        //rotatedBm=bm;
+					 rotatedBm = Bitmap.createBitmap(bm , 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);			        
+					 
+			         img.setImageBitmap(rotatedBm);
 					} catch (FileNotFoundException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.coco_bongo.EcardsActivity;
+import com.example.coco_bongo.LangActivity;
 import com.example.coco_bongo.LocationActivity;
 import com.example.coco_bongo.MediaActivity;
 import com.example.coco_bongo.PromosActivity;
@@ -64,8 +65,11 @@ public class OptionsMenu extends Activity{
 	 		locationIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			context.startActivity(locationIntent);
 	 	    return true;
-	   		
-	   		
+	 	case R.id.action_lenguaje:
+	 		Intent langIntent = new Intent(context,LangActivity.class);
+	 		langIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	 		context.startActivity(langIntent);
+	 		return true;
 	   }
 	   return true;
    }

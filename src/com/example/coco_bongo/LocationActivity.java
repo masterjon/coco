@@ -1,5 +1,6 @@
 package com.example.coco_bongo;
 
+import com.example.coco_bongo.models.OptionsMenu;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
@@ -85,9 +86,14 @@ public class LocationActivity extends Activity {
 			map.moveCamera(CameraUpdateFactory.newLatLngZoom(COCO_PUNTACANA,10));
 			map.animateCamera(CameraUpdateFactory.zoomTo(14),2000, null);
 			return true;
+			
 		default:
-			break;
+			OptionsMenu.selectItem(item,getApplicationContext());
+			
+		
 		}
+		
+			
 		return super.onMenuItemSelected(featureId, item);
 	}
 

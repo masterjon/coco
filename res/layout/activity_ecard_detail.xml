@@ -15,7 +15,7 @@
         android:id="@+id/ecard_img_single"
         android:contentDescription="@string/ecard_single_desc"
          android:layout_width="300dp"
-        android:layout_height="fill_parent"
+        android:layout_height="372dp"
         android:adjustViewBounds="true"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
@@ -24,7 +24,7 @@
         android:id="@+id/ecard_img_frame"
         android:contentDescription="@string/ecard_single_desc"
          android:layout_width="300dp"
-        android:layout_height="fill_parent"
+        android:layout_height="372dp"
         android:layout_centerInParent="true"
        
         />

@@ -2,11 +2,14 @@ package com.example.coco_bongo;
 
 import java.util.Locale;
 
+import com.example.coco_bongo.models.OptionsMenu;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -75,6 +78,12 @@ public class LangActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		// TODO Auto-generated method stub
+		OptionsMenu.selectItem(item,getApplicationContext());
+		return super.onMenuItemSelected(featureId, item);
 	}
 
 }
