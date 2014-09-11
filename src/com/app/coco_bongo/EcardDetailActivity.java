@@ -23,6 +23,7 @@ import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
+import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -118,25 +119,25 @@ public class EcardDetailActivity extends Activity {
 					     
 					     Bitmap bm = MediaStore.Images.Media.getBitmap(this.getContentResolver(),selectedImageUri);
 				         if (bm.getWidth() > bm.getHeight() && orientation==0){
-				        	 matrix.postRotate(0);
+				        	 matrix.postRotate(orientation);
 				        	 bm= Bitmap.createScaledBitmap(bm,750,562, true);
 				        	 rotatedBm=bm;
 				        	 //Toast.makeText(getApplicationContext(), "bm.getWidth()>bm.getHeight() && orientation==0",Toast.LENGTH_LONG).show();
 						 }	
 				         else if(bm.getWidth() < bm.getHeight() && orientation==0){
-				        	 matrix.postRotate(0);
+				        	 matrix.postRotate(orientation);
 				        	 bm= Bitmap.createScaledBitmap(bm,562,750, true);
 				        	 rotatedBm=bm;
 				        	 //Toast.makeText(getApplicationContext(), "bm.getWidth()<bm.getHeight() && orientation==0",Toast.LENGTH_LONG).show();
 				         }
 				         else if (bm.getWidth() > bm.getHeight() && orientation==90){
-				        	 matrix.postRotate(90);
+				        	 matrix.postRotate(orientation);
 				        	 bm= Bitmap.createScaledBitmap(bm,750,562, true);
 				        	 rotatedBm = Bitmap.createBitmap(bm , 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);
 				        	 //Toast.makeText(getApplicationContext(), "bm.getWidth()<bm.getHeight() && orientation==90",Toast.LENGTH_LONG).show();
 				         }
 				         else{
-				        	 matrix.postRotate(0);
+				        	 matrix.postRotate(orientation);
 				        	 bm= Bitmap.createScaledBitmap(bm,750,562, true);
 				        	 rotatedBm=bm;
 				        	 //Toast.makeText(getApplicationContext(),"width:"+bm.getWidth()+"height:"+bm.getHeight()+"orientation:"+orientation,Toast.LENGTH_LONG).show();
@@ -188,7 +189,7 @@ public class EcardDetailActivity extends Activity {
 	        if (cursor.moveToFirst()) {
 	            return cursor.getInt(0);
 	        } else {
-	            return -1;
+	            return 0;
 	        }
 	    } finally {
 	        cursor.close();
@@ -267,13 +268,32 @@ public class EcardDetailActivity extends Activity {
 			//String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
 			String mSavedImageName = "IMG_"+currentPhotoname+frameImage.toString()+".png";
 			//Width = 604, Height = 1024 Change as per your requirement
-			Bitmap mBackground = Bitmap.createBitmap(1697, 2266, Bitmap.Config.ARGB_8888);
-			//Bitmap mBackground = Bitmap.createBitmap(562, 750, Bitmap.Config.ARGB_8888);
-			//Put back and top images in your res folder
+			//Bitmap mBackground = Bitmap.createBitmap(1697, 2266, Bitmap.Config.ARGB_8888);
+			//Bitmap mBackground = Bitmap.createBitmap(1456, 1944, Bitmap.Config.ARGB_8888);
+		
+
 			Bitmap  mTopImage = BitmapFactory.decodeResource(getResources(), frameImage);
-			Canvas mCanvas = new Canvas(mBackground);
+			//Put back and top images in your res folder
+			int width, height,x,y = 0;
+			
+//			 if(mTopImage.getWidth() > rotatedBm.getWidth()) { 
+//			      width = mTopImage.getWidth(); 
+//			      height = mTopImage.getHeight();
+//			      x=(mTopImage.getWidth() - rotatedBm.getWidth())/2;
+//			      y= (mTopImage.getHeight() - rotatedBm.getHeight())/2;
+//			    } else { 
+//			      width = rotatedBm.getWidth(); 
+//			      height = rotatedBm.getHeight(); 
+//			      x=(rotatedBm.getWidth() - mTopImage.getWidth())/2;
+//			      y= (rotatedBm.getHeight() - mTopImage.getHeight())/2;
+//			    } 
+			Bitmap mBackground = Bitmap.createBitmap(562, 750, Bitmap.Config.ARGB_8888);
+			mTopImage = Bitmap.createScaledBitmap(mTopImage, 562, 750, true);
+			rotatedBm= Bitmap.createScaledBitmap(rotatedBm, 562, 750, true);
+			Canvas mCanvas = new 	Canvas(mBackground);
 			mCanvas.drawBitmap(rotatedBm, 0f, 0f, null);
-			mCanvas.drawBitmap(mTopImage, 0f, 0f, null);
+			mCanvas.drawBitmap(mTopImage,0f, 0f, null);
+			
 
 			try {
 			    BitmapDrawable mBitmapDrawable = new BitmapDrawable(getResources(),mBackground);
