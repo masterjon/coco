@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.coco_bongo"
-    android:versionCode="3"
+    android:versionCode="4"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -95,11 +95,6 @@
         <activity
             android:name="com.app.coco_bongo.LangActivity"
             android:label="@string/title_activity_lang" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

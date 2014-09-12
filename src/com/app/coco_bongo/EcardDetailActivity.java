@@ -23,8 +23,8 @@ import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
-import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -160,16 +160,15 @@ public class EcardDetailActivity extends Activity {
 					currentPhotoname= timeStamp;
 		    		if (currentPhotoPath!=null){
 		    			Matrix matrix = new Matrix();
-				        
+		    			int orientation = getOrientationCameraPic(currentPhotoPath);
+		    			
 		    			 myImageBitmap=BitmapManager.setPic(img, currentPhotoPath);
 		    			 if (myImageBitmap.getWidth() < myImageBitmap.getHeight()){
 		    				 matrix.postRotate(0);
 		    			 }
 		    			 else{
-		    				 matrix.postRotate(90);
+		    				 matrix.postRotate(orientation);
 		    			 }
-		    			
-		    			 //Toast.makeText(getApplicationContext(),"width:"+myImageBitmap.getWidth()+"height:"+myImageBitmap.getHeight(),Toast.LENGTH_LONG).show();
 		    			 rotatedBm = Bitmap.createBitmap(myImageBitmap , 0, 0, myImageBitmap.getWidth(), myImageBitmap.getHeight(), matrix, true);
 		    			 img.setImageBitmap(rotatedBm);
 		    			//addPictureToGallery();
@@ -194,6 +193,36 @@ public class EcardDetailActivity extends Activity {
 	    } finally {
 	        cursor.close();
 	    }
+	}
+	public static int getOrientationCameraPic(String photo){
+		int rotate = 0;
+        ExifInterface exif;
+		try {
+			exif = new ExifInterface(photo);
+			  int exifOrientation = exif.getAttributeInt(
+	    	          ExifInterface.TAG_ORIENTATION,
+	    	          ExifInterface.ORIENTATION_NORMAL);
+			  
+
+	          switch (exifOrientation) {
+	          case ExifInterface.ORIENTATION_ROTATE_90:
+	          rotate = 90;
+	          break; 
+
+	         case ExifInterface.ORIENTATION_ROTATE_180:
+	         rotate = 180;
+	         break;
+
+	         case ExifInterface.ORIENTATION_ROTATE_270:
+	         rotate = 270;
+	         break;
+	         }
+			  
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		return rotate;
 	}
 
 	@Override

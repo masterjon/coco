@@ -69,7 +69,7 @@ public class ShowDetailActivity extends Activity {
 		    if (share){
 		    	Intent i = new Intent();
 	        	i.setAction(Intent.ACTION_SEND);   
-		    	i.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_shows_text) + title );	        	
+		    	i.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_shows_text));	        	
 	        	i.putExtra(Intent.EXTRA_STREAM, contentUri);
 	        	i.setType("image/*");
 	        	//i.setType("text/plain");

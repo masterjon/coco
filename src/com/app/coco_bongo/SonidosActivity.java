@@ -146,4 +146,14 @@ public class SonidosActivity extends Activity {
 		return super.onMenuItemSelected(featureId, item);
 	}
 
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		isPlaying = false;
+        mediaPlayer.stop();
+        mediaPlayer.reset();
+		super.onPause();
+		
+	}
+
 }
