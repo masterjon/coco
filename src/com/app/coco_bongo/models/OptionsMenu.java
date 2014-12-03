@@ -15,6 +15,7 @@ import com.app.coco_bongo.R;
 import com.app.coco_bongo.SetActivity;
 import com.app.coco_bongo.ShowsActivity;
 import com.app.coco_bongo.TicketsActivity;
+import com.app.coco_bongo.VirtualTourActivity;
 
 public class OptionsMenu extends Activity{
    public static boolean selectItem(MenuItem item, Context context){
@@ -49,12 +50,20 @@ public class OptionsMenu extends Activity{
 		mediaIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		context.startActivity(mediaIntent);
 		return true;
-	} else if (itemId == R.id.action_galeria) {
-		Intent galleryIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://galeria.cocobongo.com.mx/"));
-		galleryIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		context.startActivity(galleryIntent);
-		return true;
-	} else if (itemId == R.id.action_ecard) {
+	} 
+	//else if (itemId == R.id.action_galeria) {
+	//	Intent galleryIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://galeria.cocobongo.com.mx/"));
+	//	galleryIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	//	context.startActivity(galleryIntent);
+	//	return true;
+	//} 
+	 else if (itemId == R.id.action_virtual_tour) {
+			Intent virtualTourIntent= new Intent(context,VirtualTourActivity.class);
+			virtualTourIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			context.startActivity(virtualTourIntent);
+			return true;
+	}
+	 else if (itemId == R.id.action_ecard) {
 		Intent ecardsIntent= new Intent(context,EcardsActivity.class);
 		ecardsIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		context.startActivity(ecardsIntent);

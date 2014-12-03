@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/repeat"
+    tools:context=".MediaActivity" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#80000000"
+		android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+		android:orientation="vertical">
+    
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:paddingTop="50sp"
+	        android:paddingBottom="50sp"
+	        android:orientation="vertical">
+			
+	          
+				<ImageButton
+			        android:id="@+id/virtual_tour_cancun"
+			        android:contentDescription="@string/virtual_tour_cancun"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			         android:paddingLeft="50sp"
+    				android:paddingRight="50sp"
+    				android:paddingTop="20sp"
+			        android:src="@drawable/call_button"/>
+			 
+	    </LinearLayout>
+	   
+	     <View 
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"       
+		   android:background="#24B9FF"/>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:paddingTop="50sp"
+	        android:paddingBottom="50sp"
+	        android:orientation="vertical">
+				
+	  
+	          
+				<ImageButton
+			        android:id="@+id/virtual_tour_playa"
+			        android:contentDescription="@string/virtual_tour_playa"
+			        android:layout_width="match_parent"
+			        android:adjustViewBounds="true"
+					android:scaleType="fitCenter"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			         android:paddingLeft="50sp"
+    				android:paddingRight="50sp"
+    				android:paddingTop="20sp"
+			        android:src="@drawable/call_button"/>
+			 
+	    </LinearLayout>
+	    
+	    	           	    	
+	</LinearLayout>	    	           
+    
+
+</ScrollView>

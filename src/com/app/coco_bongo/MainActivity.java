@@ -29,10 +29,12 @@ public class MainActivity extends Activity {
 			R.string.title_activity_shows,
 			R.string.title_activity_set,
 			R.string.title_activity_media,
-			R.string.title_activity_gallery,
+		//	R.string.title_activity_gallery,
+			R.string.title_activity_virtual_tour,
 			R.string.title_activity_ecards,
 			R.string.title_activity_location,
 			R.string.title_activity_lang,
+			
 			
 	  };
 	  int[] imageId = {
@@ -42,10 +44,12 @@ public class MainActivity extends Activity {
 		      R.drawable.shows_button,
 		      R.drawable.set_button,
 		      R.drawable.media_button,
-		      R.drawable.galeria_button,
+		     // R.drawable.galeria_button,
+		      R.drawable.tour_virtual,
 		      R.drawable.ecards_button,
 		      R.drawable.location_button,
 		      R.drawable.idioma_button,
+		     
 		  };
 	  @Override
 	    public void onConfigurationChanged(Configuration newConfig)
@@ -113,10 +117,14 @@ public class MainActivity extends Activity {
 					startActivity(mediaIntent);
 				//	Toast.makeText(getApplicationContext(), "Clickedd"+menuItem[position], Toast.LENGTH_SHORT).show();
 				}
+//				if (position==6){
+//					Intent galleryIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://galeria.cocobongo.com.mx/"));
+//					startActivity(galleryIntent);
+//				}
 				if (position==6){
-					Intent galleryIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://galeria.cocobongo.com.mx/"));
-					startActivity(galleryIntent);
-				}
+					Intent virtualTourIntent = new Intent(getApplicationContext(),VirtualTourActivity.class);
+					startActivity(virtualTourIntent);
+				}	
 				if (position==7){
 					Intent ecardsIntent= new Intent(getApplicationContext(),EcardsActivity.class);
 					startActivity(ecardsIntent);
@@ -129,6 +137,7 @@ public class MainActivity extends Activity {
 					Intent langIntent= new Intent(getApplicationContext(),LangActivity.class);
 					startActivity(langIntent);
 				}
+
 			}
 			
 		});

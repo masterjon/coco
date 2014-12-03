@@ -41,12 +41,17 @@
 			    android:title="@string/title_activity_media" 
 			    android:showAsAction="never" />
 			
-			<item 
+			<!-- <item 
 			    android:id="@+id/action_galeria" 
 			    android:icon="@drawable/galeria_icon" 
 			    android:title="@string/title_activity_gallery" 
 			    android:showAsAction="never" />
-			
+			 -->
+			 <item 
+			    android:id="@+id/action_virtual_tour" 
+			    android:icon="@drawable/tour_virtual_icon" 
+			    android:title="@string/title_activity_virtual_tour" 
+			    android:showAsAction="never" />
 			<item 
 			    android:id="@+id/action_ecard" 
 			    android:icon="@drawable/ecards_button" 

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="lang_es">ESPAÑOL</string>
-	<string name="lang_en">ENGLISH</string>
-	<string name="lang_pr">PORTUGUÊS</string>
-	
-	
-	
+
+    <string name="lang_es">ESPAÑOL</string>
+    <string name="lang_en">ENGLISH</string>
+    <string name="lang_pr">PORTUGUÊS</string>
     <string name="app_name">Coco Bongo</string>
     <string name="action_settings">Settings</string>
     <string name="action_cancun">Cancun</string>
     <string name="action_playa">Playa del Carmen</string>
     <string name="action_puntacana">Punta Cana</string>
-    
     <string name="title_activity_tickets">Tickets</string>
     <string name="title_activity_promos">Promos</string>
     <string name="title_activity_boutique">Boutique</string>
@@ -26,9 +23,8 @@
     <string name="title_activity_ecards">E-cards</string>
     <string name="title_activity_ecard_detail"></string>
     <string name="title_activity_location">Location</string>
-	<string name="title_activity_lang">Lang</string>
-     
-     
+    <string name="title_activity_lang">Lang</string>
+    <string name="title_activity_virtual_tour">Virtual Tour</string>
 
     <string-array name="array_image_input_method">
         <item>Camera</item>
@@ -43,12 +39,10 @@
     <string name="wallpaper_single_desc">Wallpaper</string>
     <string name="ecard_single_desc">E-card</string>
     <string name="select_location">Select Location</string>
-
     <string name="share">Share</string>
     <string name="wp_res1">540x480</string>
     <string name="wp_res2">960x854</string>
     <string name="wp_res3">1080x960</string>
-
     <string name="show_queen">Queen</string>
     <string name="show_lmfao">LMFAO</string>
     <string name="show_moulin">Moulin Rouge</string>
@@ -58,7 +52,6 @@
     <string name="show_samba">Samba</string>
     <string name="show_michael">Michael Jackson</string>
     <string name="show_elvis">Elvis</string>
-    
     <string name="sound_heig">Heig Ho</string>
     <string name="sound_just">Just Called</string>
     <string name="sound_lion">Lion</string>
@@ -71,47 +64,45 @@
     <string name="sound_piano_2">Piano 2</string>
     <string name="sound_piano_3">Piano 3</string>
     <string name="sound_piano_4">Piano 4</string>
-    
     <string name="promo_1">Promo 1</string>
     <string name="promo_2">Promo 2</string>
     <string name="promo_3">Promo 3</string>
     <string name="promo_4">Promo 4</string>
-	<string name="promo_5">Promo 5</string>
+    <string name="promo_5">Promo 5</string>
+    <string name="ecard_gaga_michael">Gaga &amp; Michael</string>
+    <string name="ecard_gaga">Gaga</string>
+    <string name="ecard_elvis">Elvis</string>
+    <string name="ecard_michael">Michael</string>
+    <string name="ecard_beetlejuice_mask">Beetlejuice &amp; The Mask</string>
+    <string name="ecard_beyonce">Beyoncé</string>
+    <string name="ecard_madonna">Madonna</string>
+    <string name="ecard_beetlejuice">Beetlejuice</string>
+    <string name="ecard_mask">The Mask</string>
+    <string name="select_image_from">Select image from:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_to_gallery">Saved to Gallery</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="wallpaper1">Wallpaper 1</string>
+    <string name="wallpaper2">Wallpaper 2</string>
+    <string name="wallpaper3">Wallpaper 3</string>
+    <string name="wallpaper4">Wallpaper 4</string>
+    <string name="wallpaper5">Wallpaper 5</string>
+    <string name="wallpaper6">Wallpaper 6</string>
+    <string name="wallpaper7">Wallpaper 7</string>
+    <string name="wallpaper8">Wallpaper 8</string>
+    <string name="wallpaper9">Wallpaper 9</string>
+    <string name="coco_cancun_name">Coco Bongo Cancun</string>
+    <string name="coco_playa_name">Coco Bongo Playa del Carmen</string>
+    <string name="coco_puntacana_name">Coco Bongo Punta Cana</string>
+    <string name="cancun_snipet">Kukulcan Boulevard Km 9.5 Forum Shopping Mall, Hotel Zone Cancun Q.Roo, Mexico</string>
+    <string name="playa_snipet">Avenue 10 and street 12, Playa del Carmen Q.Roo, México</string>
+    <string name="puntacana_snipet">Downtown Punta Cana Shopping Mall, Barcelo Road, corner el Boulevard, Crossing Coco Loco Bávaro, Punta Cana Dominican Republic</string>
+    <string name="share_ecard_text">Download the Coco Bongo app and make your e-card #CocoBongoStyle! http://bit.ly/CocoBongoApp</string>
+    <string name="share_shows_text">Download the Coco Bongo app and discover the different shows! http://bit.ly/CocoBongoApp</string>
+    <string name="share_wallpaper_text">Add some #CocoBongoStyle to your smartphone with these wallpapers! Download the app http://bit.ly/CocoBongoApp</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="virtual_tour_cancun">Virtual Tour Cancun</string>   
+	<string name="virtual_tour_playa">Virtual Tour Playa</string> 
 
-	<string name="ecard_gaga_michael">Gaga &amp; Michael</string>
-	<string name="ecard_gaga">Gaga</string>
-	<string name="ecard_elvis">Elvis</string>
-	<string name="ecard_michael">Michael</string>
-	<string name="ecard_beetlejuice_mask">Beetlejuice &amp; The Mask</string>
-	<string name="ecard_beyonce">Beyoncé</string>
-	<string name="ecard_madonna">Madonna</string>
-	<string name="ecard_beetlejuice">Beetlejuice</string>
-	<string name="ecard_mask">The Mask</string>
-	<string name="select_image_from">Select image from:</string>
-	<string name="cancel">Cancel</string>
-	<string name="save_to_gallery">Saved to Gallery</string>
-	<string name="select_picture">Select Picture</string>
-	
-	<string name="wallpaper1">Wallpaper 1</string>
-	<string name="wallpaper2">Wallpaper 2</string>
-	<string name="wallpaper3">Wallpaper 3</string>
-	<string name="wallpaper4">Wallpaper 4</string>
-	<string name="wallpaper5">Wallpaper 5</string>
-	<string name="wallpaper6">Wallpaper 6</string>
-	<string name="wallpaper7">Wallpaper 7</string>
-	<string name="wallpaper8">Wallpaper 8</string>
-	<string name="wallpaper9">Wallpaper 9</string>
-	
-	<string name="coco_cancun_name">Coco Bongo Cancun</string>
-	<string name="coco_playa_name">Coco Bongo Playa del Carmen</string>
-	<string name="coco_puntacana_name">Coco Bongo Punta Cana</string>
-	<string name="cancun_snipet">Kukulcan Boulevard Km 9.5 Forum Shopping Mall, Hotel Zone Cancun Q.Roo, Mexico</string>
-	<string name="playa_snipet">Avenue 10 and street 12, Playa del Carmen Q.Roo, México</string>
-	<string name="puntacana_snipet">Downtown Punta Cana Shopping Mall, Barcelo Road, corner el Boulevard, Crossing Coco Loco Bávaro, Punta Cana Dominican Republic</string>
-	
-	
-	<string name="share_ecard_text">Download the Coco Bongo app and make your e-card #CocoBongoStyle! http://bit.ly/CocoBongoApp</string>
-	<string name="share_shows_text">Download the Coco Bongo app and discover the different shows! http://bit.ly/CocoBongoApp</string>
-	<string name="share_wallpaper_text">Add some #CocoBongoStyle to your smartphone with these wallpapers! Download the app http://bit.ly/CocoBongoApp</string>
-	
 </resources>

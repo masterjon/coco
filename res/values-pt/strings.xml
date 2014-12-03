@@ -26,7 +26,9 @@
     <string name="title_activity_ecard_detail"></string>
     <string name="title_activity_location">Localização</string>
 	<string name="title_activity_lang">Língua</string>
+	<string name="title_activity_virtual_tour">Tour Virtual</string>
      
+	
      
 
     <string-array name="array_image_input_method">
@@ -111,4 +113,7 @@
 	<string name="share_ecard_text">Baixe o aplicativo do Coco Bongo e faça um e-card #CocoBongoStyle! http://bit.ly/CocoBongoApp</string>
 	<string name="share_shows_text">Baixe o aplicativo do Coco Bongo e descubra os diferentes shows! http://bit.ly/CocoBongoApp</string>
 	<string name="share_wallpaper_text">Adicione #CocoBongoStyle no seu smartphone com estes wallpapers! Baixe o aplicativo http://bit.ly/CocoBongoApp</string>
+	
+	<string name="virtual_tour_cancun">Tour Virtual Cancún</string>   
+	<string name="virtual_tour_playa">Tour Virtual Playa</string>   
 </resources>
