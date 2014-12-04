@@ -38,7 +38,7 @@
 			         android:paddingLeft="50sp"
     				android:paddingRight="50sp"
     				android:paddingTop="20sp"
-			        android:src="@drawable/call_button"/>
+			        android:src="@drawable/cancun_button"/>
 			 
 	    </LinearLayout>
 	   
@@ -68,7 +68,7 @@
 			         android:paddingLeft="50sp"
     				android:paddingRight="50sp"
     				android:paddingTop="20sp"
-			        android:src="@drawable/call_button"/>
+			        android:src="@drawable/playa_button"/>
 			 
 	    </LinearLayout>
 	    
