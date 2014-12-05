@@ -49,7 +49,7 @@
 			 -->
 			 <item 
 			    android:id="@+id/action_virtual_tour" 
-			    android:icon="@drawable/tour_virtual_icon" 
+			    android:icon="@drawable/tour_icon" 
 			    android:title="@string/title_activity_virtual_tour" 
 			    android:showAsAction="never" />
 			<item 
