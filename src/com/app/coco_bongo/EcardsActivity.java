@@ -2,7 +2,7 @@ package com.app.coco_bongo;
 
 import com.app.coco_bongo.data.CustomGrid;
 import com.app.coco_bongo.models.OptionsMenu;
-import com.app.coco_bongo.R;
+
 
 import android.os.Bundle;
 import android.app.Activity;
