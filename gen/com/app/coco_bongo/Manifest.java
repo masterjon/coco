@@ -9,6 +9,8 @@ package com.app.coco_bongo;
 
 public final class Manifest {
     public static final class permission {
+        /**  permissions 
+         */
         public static final String MAPS_RECEIVE="com.app.coco_bongo.permission.MAPS_RECEIVE";
     }
 }

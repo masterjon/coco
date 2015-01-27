@@ -110,9 +110,9 @@
 	<string name="playa_snipet">Av. 10 y Calle 12, Playa de Carmen Q.Roo, México</string>
 	<string name="puntacana_snipet">Centro Comercial Downtown Punta Cana, carretera Barcelo, Esq. el Boulevard, cruce de Coco Loco Bávaro, Punta Cana República Dominicana</string>
 	
-	<string name="share_ecard_text">¡Descarga la app de Coco Bongo y crea tu e-card #CocoBongoStyle! http://bit.ly/CocoBongoApp</string>
-	<string name="share_shows_text">¡Descarga la app de Coco Bongo y descubre los diferentes shows! http://bit.ly/CocoBongoApp</string>
-	<string name="share_wallpaper_text">¡Ponle #CocoBongoStyle a tu smartphone con estos wallpapers! Descarga la app http://bit.ly/CocoBongoApp</string>
+	<string name="share_ecard_text">¡Descarga la app de Coco Bongo y crea tu e-card #CocoBongoStyle! http://bit.ly/CocoBongoAndroid</string>
+	<string name="share_shows_text">¡Descarga la app de Coco Bongo y descubre los diferentes shows! http://bit.ly/CocoBongoAndroid</string>
+	<string name="share_wallpaper_text">¡Ponle #CocoBongoStyle a tu smartphone con estos wallpapers! Descarga la app http://bit.ly/CocoBongoAndroid</string>
 	
 	<string name="virtual_tour_cancun">Tour Virtual Cancún</string>   
 	<string name="virtual_tour_playa">Tour Virtual Playa</string>   
